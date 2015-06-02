@@ -1,0 +1,45 @@
+{
+  "name": "leap-rps",
+  "version": "0.0.1",
+  "license": "proprietary",
+  "description": "",
+  "keywords": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.2.0",
+    "lodash": "~2.4.1",
+    "moment": "2.8.3",
+    "font-awesome": "4.2.0",
+    "leapjs-rigged-hand": "~0.1.4",
+    "threejs": "*",
+    "leapjs-plugins": "master"
+},
+"overrides": {
+    "leapjs-rigged-hand": {
+        "main": [
+            "build/leap.rigged-hand-0.1.4.js"
+        ],
+        "dependencies": {
+            "leapjs": "*",
+            "threejs": "*",
+            "leapjs-plugins": "*"
+        }
+    },
+    "leapjs-plugins": {
+        "main": [
+            "main/leap-plugins-0.1.11pre.js"
+        ],
+        "dependencies": {
+            "leapjs": "*",
+            "threejs": "*"
+        }
+    }
+}
+}
